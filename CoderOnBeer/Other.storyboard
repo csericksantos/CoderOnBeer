@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Other View Controller-->
+        <scene sceneID="myj-ku-mah">
+            <objects>
+                <viewController storyboardIdentifier="OtherViewController" id="peg-vq-z47" customClass="OtherViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Iz-BZ-zan"/>
+                        <viewControllerLayoutGuide type="bottom" id="981-Ed-tzO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZO2-hS-ebU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EX-Ok-j0A">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="hEL-ZV-3F8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hEL-ZV-3F8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="hEL-ZV-3F8"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stella" translatesAutoresizingMaskIntoConstraints="NO" id="jcS-HU-81v">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jcS-HU-81v" secondAttribute="height" multiplier="80:53" id="ZPt-2H-1Mt"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZPt-2H-1Mt"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ZPt-2H-1Mt"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="5EX-Ok-j0A" secondAttribute="trailing" constant="85" id="QtH-5e-OGZ"/>
+                            <constraint firstItem="jcS-HU-81v" firstAttribute="leading" secondItem="ZO2-hS-ebU" secondAttribute="leading" id="Qw7-Tj-zTL"/>
+                            <constraint firstAttribute="trailing" secondItem="jcS-HU-81v" secondAttribute="trailing" id="U7P-Qz-GZw"/>
+                            <constraint firstItem="5EX-Ok-j0A" firstAttribute="leading" secondItem="ZO2-hS-ebU" secondAttribute="leadingMargin" constant="85" id="bfi-sW-yZz"/>
+                            <constraint firstItem="jcS-HU-81v" firstAttribute="top" secondItem="5EX-Ok-j0A" secondAttribute="bottom" constant="68" id="lWb-bC-QUX"/>
+                            <constraint firstItem="5EX-Ok-j0A" firstAttribute="top" secondItem="6Iz-BZ-zan" secondAttribute="bottom" constant="131" id="rbq-SP-OHk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="5EX-Ok-j0A"/>
+                                <exclude reference="jcS-HU-81v"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="QtH-5e-OGZ"/>
+                                <exclude reference="bfi-sW-yZz"/>
+                                <exclude reference="rbq-SP-OHk"/>
+                                <exclude reference="Qw7-Tj-zTL"/>
+                                <exclude reference="U7P-Qz-GZw"/>
+                                <exclude reference="lWb-bC-QUX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="5EX-Ok-j0A"/>
+                                <include reference="jcS-HU-81v"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="QtH-5e-OGZ"/>
+                                <include reference="bfi-sW-yZz"/>
+                                <include reference="rbq-SP-OHk"/>
+                                <include reference="Qw7-Tj-zTL"/>
+                                <include reference="U7P-Qz-GZw"/>
+                                <include reference="lWb-bC-QUX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4I6-Z2-MFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="259.5" y="360"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="stella" width="800" height="530"/>
+    </resources>
+</document>
