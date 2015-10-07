@@ -32,16 +32,21 @@
 }
 
 - (void)testExample {
-
+    /*
     [XCUIDevice sharedDevice].orientation = UIDeviceOrientationPortraitUpsideDown;
     
     XCUIApplication *app = [[XCUIApplication alloc] init];
     XCUIElement *mudarNomeButton = app.buttons[@"Mudar nome"];
     [mudarNomeButton tap];
-    XCUIElement *label = app.staticTexts[@"JustBeer"];
+    XCUIElement *label = app.staticTexts[@"CodersOnBeer"];
 
     XCTAssertNotNil(label.value);
-     
+     */
+    
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationPortraitUpsideDown;
+    [XCUIDevice sharedDevice].orientation = UIDeviceOrientationPortraitUpsideDown;
+    [[[XCUIApplication alloc] init].buttons[@"Mudar nome"] tap];
+    
     
 }
 
